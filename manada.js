@@ -8,24 +8,24 @@ Animal.prototype = {
 	}
 };
 
-function Cachorrin() {
+function Cachorro() {
 }
 
-function Gatin(){
+function Gato(){
 }
-var GatinPrototype = new Animal();
-var CachorrinPrototype = new Animal();
+var GatoPrototype = new Animal();
+var CachorroPrototype = new Animal();
 
-CachorrinPrototype.fazerBarulho = function() {
+CachorroPrototype.fazerBarulho = function() {
     return "Au";
 }
 
-GatinPrototype.fazerBarulho = function() {
+GatoPrototype.fazerBarulho = function() {
     return "Miau";
 }
 
-Cachorrin.prototype = CachorrinPrototype;
-Gatin.prototype = GatinPrototype;
+Cachorro.prototype = CachorroPrototype;
+Gato.prototype = GatoPrototype;
 
 function Manada(){
     this.animais = [];
@@ -77,7 +77,7 @@ Sustenido.prototype = ManadaComSustenido;
 
 var Virgula = new Virgula();
 var SustenidoDuplo = new Sustenido();
-var animais = [new Cachorrin(), new Gatin()];
+var animais = [new Cachorro(), new Gato()];
 
 animais.forEach(function (animal) {
       Virgula.adicionar(animal);
